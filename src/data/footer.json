@@ -1,0 +1,66 @@
+{
+  "company": {
+    "name": "Nexode",
+    "description": "Transformamos ideas en soluciones digitales innovadoras. Especialistas en desarrollo web, aplicaciones móviles y tecnologías emergentes."
+  },
+  "services": {
+    "title": "Servicios",
+    "links": [
+      {
+        "name": "Desarrollo Web",
+        "href": "#"
+      },
+      {
+        "name": "Aplicaciones Móviles",
+        "href": "#"
+      },
+      {
+        "name": "E-commerce",
+        "href": "#"
+      },
+      {
+        "name": "APIs & Backend",
+        "href": "#"
+      }
+    ]
+  },
+  "company_links": {
+    "title": "Empresa",
+    "links": [
+      {
+        "name": "Sobre Nosotros",
+        "href": "#"
+      },
+      {
+        "name": "Equipo",
+        "href": "#"
+      },
+      {
+        "name": "Portfolio",
+        "href": "#"
+      },
+    
+      {
+        "name": "Contacto",
+        "href": "#"
+      }
+    ]
+  },
+  "legal": {
+    "copyright": "&copy; 2025 Nexode. Todos los derechos reservados.",
+    "links": [
+      {
+        "name": "Política de Privacidad",
+        "href": "#"
+      },
+      {
+        "name": "Términos de Servicio",
+        "href": "#"
+      },
+      {
+        "name": "Cookies",
+        "href": "#"
+      }
+    ]
+  }
+}

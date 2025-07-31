@@ -1,0 +1,66 @@
+{
+  "section": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos soluciones tecnológicas integrales que transforman la manera en que tu empresa opera y crece en el mundo digital."
+  },
+  "plans": [
+    {
+      "id": "basic",
+      "name": "Landing Page",
+      "description": "Perfecto para proyectos pequeños",
+      "price": "$899",
+      "priceSubtext": "O consíguela por un pago único y recibe descuento adicional.",
+      "featured": false,
+      "features": [
+        "Sitio web responsive",
+        "Hasta 5 páginas",
+        "Formulario de contacto",
+        "SEO básico",
+        "Hosting 1 año incluido"
+      ],
+      "buttonText": "Seleccionar Plan",
+      "buttonStyle": "outline"
+    },
+    {
+      "id": "professional",
+      "name": "Landing Page + Ecommerce",
+      "description": "Ideal para empresas en crecimiento",
+      "price": "$1,899",
+      "priceSubtext": "O consíguela por un pago único y recibe descuento adicional.",
+      "featured": true,
+      "badge": "Más Popular",
+      "features": [
+        "Todo del plan Básico",
+        "Hasta 15 páginas",
+        "CMS personalizado",
+        "Integración con redes sociales",
+        "Analytics avanzado",
+        "Soporte 6 meses"
+      ],
+      "buttonText": "Seleccionar Plan",
+      "buttonStyle": "primary"
+    },
+    {
+      "id": "enterprise",
+      "name": "Empresarial",
+      "description": "Soluciones completas y escalables",
+      "price": "$3,999",
+      "priceSubtext": "O consíguela por un pago único y recibe descuento adicional.",
+      "featured": false,
+      "features": [
+        "Todo del plan Profesional",
+        "Páginas ilimitadas",
+        "E-commerce completo",
+        "API personalizada",
+        "Soporte 24/7",
+        "Mantenimiento 1 año"
+      ],
+      "buttonText": "Contactar Ventas",
+      "buttonStyle": "outline"
+    }
+  ],
+  "footer": {
+    "text": "¿Necesitas algo personalizado?",
+    "buttonText": "Solicita una cotización personalizada"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "section": {
+    "title": "Hablemos de tu Proyecto",
+    "subtitle": "Tienes una idea? Nos encantaría escucharla y ayudarte a convertirla en realidad"
+  },
+  "contactInfo": {
+    "title": "Información de Contacto"
+  },
+  "contactMethods": [
+    {
+      "id": "email",
+      "title": "Email",
+      "value": "contacto@nexode.com",
+      "href": "mailto:contacto@nexode.com",
+      "icon": "envelope"
+    },
+    {
+      "id": "phone",
+      "title": "Teléfono",
+      "value": "+1 (234) 567-8900",
+      "href": "tel:+1234567890",
+      "icon": "phone"
+    },
+    {
+      "id": "whatsapp",
+      "title": "WhatsApp",
+      "value": "+1 (234) 567-8900",
+      "href": "https://wa.me/1234567890",
+      "icon": "chat"
+    }
+  ],
+  "form": {
+    "title": "Envíanos un mensaje",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Nombre",
+        "type": "text",
+        "placeholder": "Tu nombre",
+        "required": true,
+        "gridCol": "md:col-span-1"
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "type": "email",
+        "placeholder": "tu@email.com",
+        "required": true,
+        "gridCol": "md:col-span-1"
+      },
+      {
+        "id": "company",
+        "label": "Empresa",
+        "type": "text",
+        "placeholder": "Nombre de tu empresa (opcional)",
+        "required": false,
+        "gridCol": "md:col-span-2"
+      },
+      {
+        "id": "message",
+        "label": "Cuéntanos sobre tu proyecto",
+        "type": "textarea",
+        "placeholder": "Describe tu proyecto, objetivos, funcionalidades requeridas, etc.",
+        "required": true,
+        "gridCol": "md:col-span-2",
+        "rows": 4
+      }
+    ],
+    "submitButton": {
+      "text": "Enviar Mensaje"
+    }
+  }
+}

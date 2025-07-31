@@ -1,0 +1,50 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+---
+
+<section class="pt-20 bg-gradient-to-b from-secondary-90 to-secondary-100">
+    <div class="container mx-auto px-6">
+        <!-- Section header -->
+        <SectionHeader
+            title="Proyectos Destacados"
+            subtitle="Conoce algunos de nuestros trabajos más recientes y exitosos"
+        />
+
+        <!-- Portfolio grid -->
+        <div class="grid grid-cols-6 gap-5 md:10 xl:mx-40 mb-8">
+            <!-- Column -->
+            <div
+                class="col-span-6 md:col-span-6 xl:col-span-2 bg-primary-100 h-60 rounded-4xl"
+            >
+            </div>
+
+            <!-- Column -->
+            <div
+                class="col-span-6 md:col-span-6 xl:col-span-2 bg-primary-100 rounded-4xl"
+            >
+            </div>
+            <div
+                class="col-span-6 md:col-span-6 xl:col-span-2 bg-primary-100 rounded-4xl"
+            >
+            </div>
+            <div
+                class="col-span-6 md:col-span-6 xl:col-span-3 bg-primary-100 rounded-4xl"
+            >
+            </div>
+            <div
+                class="col-span-6 md:col-span-6 xl:col-span-3 bg-primary-100 h-60 rounded-4xl"
+            >
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center">
+            <p class="text-gray-400 mb-6">¿Te gustó lo que viste?</p>
+            <button
+                class="px-8 py-4 bg-primary-100 text-white font-semibold rounded-4xl transition-all duration-300 transform hover:scale-105"
+            >
+                Ver Todos los Proyectos
+            </button>
+        </div>
+    </div>
+</section>

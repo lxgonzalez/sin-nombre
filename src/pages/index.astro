@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Pricing from "../components/Pricing.astro";
+import Portfolio from "../components/Portfolio.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+	<Header />
+	<main>
+		<section id="inicio">
+			<Hero />
+		</section>
+		<section id="precios">
+			<Pricing />
+		</section>
+		<section id="portfolio">
+			<Portfolio />
+		</section>
+		<section id="contacto">
+			<Contact />
+		</section>
+	</main>
+	<Footer />
+</Layout>

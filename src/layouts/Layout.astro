@@ -1,0 +1,34 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="Nexode - Transformamos ideas en soluciones digitales. Desarrollo web, aplicaciones móviles y tecnologías innovadoras."
+		/>
+		<meta
+			name="keywords"
+			content="desarrollo web, aplicaciones móviles, software, tecnología, programación"
+		/>
+		<title>Nexode - Transformamos Ideas en Soluciones Digitales</title>
+	</head>
+	<body class="bg-secondary-100 text-white">
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

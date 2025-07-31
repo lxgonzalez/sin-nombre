@@ -1,0 +1,74 @@
+---
+import pricingData from '../data/pricing.json';
+import ChechIcon from 'astro-heroicons/solid/Check.astro';
+import SectionHeader from './SectionHeader.astro';
+const { section, plans, footer } = pricingData;
+---
+
+<section class="bg-gradient-to-b from-secondary-100 to-secondary-90">
+    <div class="container mx-auto px-6">
+        <!-- Section header -->
+        <SectionHeader 
+            title={section.title}
+            subtitle={section.subtitle}
+        />
+
+        <!-- Pricing cards -->
+        <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {plans.map((plan) => (
+                <div
+                    class={`rounded-2xl p-8 border transition-all duration-300 transform hover:scale-105 ${
+                        plan.featured 
+                            ? 'bg-gradient-to-b from-primary-100/10 to-blue-600/10 border-2 border-primary-100 relative scale-105'
+                            : 'bg-slate-800 border-slate-700 hover:border-primary-100'
+                    }`}
+                >
+                    {plan.featured && (
+                        <!-- Popular badge -->
+                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-primary-100 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                                {plan.badge}
+                            </span>
+                        </div>
+                    )}
+
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+                        <p class="text-gray-400 mb-6">{plan.description}</p>
+                        <div class="text-4xl font-bold text-primary-100 mb-2">{plan.price}</div>
+                        <p class="text-white-100/50">{plan.priceSubtext}</p>
+                    </div>
+
+                    <ul class="space-y-4 mb-8">
+                        {plan.features.map((feature) => (
+                            <li class="flex items-center text-gray-300">
+                                <ChechIcon class="w-5 h-5 text-primary-100 mr-3"/>
+                                {feature}
+                            </li>
+                        ))}
+                    </ul>
+
+                    <button
+                        class={`w-full py-3 px-6 font-semibold rounded-4xl transition-all duration-300 ${
+                            plan.buttonStyle === 'primary'
+                                ? 'bg-primary-100 text-white transform hover:scale-105'
+                                : 'border-2 border-primary-100 text-primary-100 hover:bg-primary-100 hover:text-white-100'
+                        }`}
+                    >
+                        {plan.buttonText}
+                    </button>
+                </div>
+            ))}
+        </div>
+
+        <!-- Additional info -->
+        <!-- <div class="text-center p-12">
+            <p class="text-gray-400 mb-4">{footer.text}</p>
+            <button
+                class="text-primary-100 hover:text-cyan-300 font-semibold underline"
+            >
+                {footer.buttonText}
+            </button>
+        </div> -->
+    </div>
+</section>

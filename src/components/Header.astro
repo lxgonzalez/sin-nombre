@@ -1,0 +1,143 @@
+---
+// Header/Navigation component
+---
+
+<header class="fixed top-0 w-full z-50">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <span class="text-xl font-bold text-white">Nexode</span>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a
+                    href="#inicio"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Inicio</a
+                >
+                <a
+                    href="#servicios"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Servicios</a
+                >
+                <a
+                    href="#portfolio"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Portfolio</a
+                >
+                <a
+                    href="#precios"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Precios</a
+                >
+                <a
+                    href="#nosotros"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Nosotros</a
+                >
+                <a
+                    href="#contacto"
+                    class="text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Contacto</a
+                >
+            </div>
+
+            <button
+                class="md:hidden text-white-100 hover:text-white"
+                id="mobile-menu-button"
+            >
+                <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-secondary-100/95" id="mobile-menu">
+            <div class="pt-4 pb-2 space-y-1 border-t border-slate-800 mt-4">
+                <a
+                    href="#inicio"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Inicio</a
+                >
+                <a
+                    href="#servicios"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Servicios</a
+                >
+                <a
+                    href="#portfolio"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Portfolio</a
+                >
+                <a
+                    href="#precios"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Precios</a
+                >
+                <a
+                    href="#nosotros"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Nosotros</a
+                >
+                <a
+                    href="#contacto"
+                    class="block px-3 py-2 text-white-100 hover:text-primary-100 transition-colors duration-300"
+                    >Contacto</a
+                >
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("hidden");
+    });
+
+    // Smooth scrolling for anchor links
+    document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll('a[href^="#"]');
+
+        links.forEach((link) => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute("href")?.substring(1);
+                const targetElement = document.getElementById(targetId || "");
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+
+                    // Close mobile menu if open
+                    mobileMenu?.classList.add("hidden");
+                }
+            });
+        });
+    });
+
+    // Header background opacity on scroll
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+            header?.classList.add("bg-secondary-100");
+            header?.classList.remove("bg-transparent");
+        } else {
+            header?.classList.add("bg-transparent");
+            header?.classList.remove("bg-secondary-100");
+        }
+    });
+</script>

@@ -1,0 +1,50 @@
+---
+import backgroundVideo from "../assets/background-hero.mp4";
+---
+
+<section class="min-h-dvh relative overflow-hidden">
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-full h-full object-cover absolute inset-0 z-0"
+    >
+        <source src={backgroundVideo} type="video/mp4" />
+    </video>
+
+    <div
+        class="absolute inset-0 bg-gradient-to-t from-secondary-100 to-black/50 z-0"
+    >
+    </div>
+
+    <!-- Contenedor centrado con flex -->
+    <div
+        class="relative z-10 container mx-auto flex items-center justify-center min-h-dvh px-6"
+    >
+        <div class="text-center max-w-4xl">
+            <h1
+                class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            >
+                Transformamos Ideas en
+                <span class="bg-clip-text text-primary-100"
+                    >Soluciones Digitales</span
+                >
+            </h1>
+
+            <p
+                class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+            >
+                Desarrollamos sistemas web y móviles de última generación que
+                impulsan el crecimiento de tu negocio con tecnología de
+                vanguardia.
+            </p>
+
+            <button
+                class="px-4 py-2.5 bg-gradient-to-r from-primary-100 to-info-100 text-white font-semibold rounded-4xl hover:from-primary-100 hover:to-info-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+                Cotizar Proyecto
+            </button>
+        </div>
+    </div>
+</section>
