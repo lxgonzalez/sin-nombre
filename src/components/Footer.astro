@@ -26,9 +26,19 @@ import footerData from "../data/footer.json";
             <div class="lg:col-span-2">
                 <div class="mb-6">
                     <div class="flex items-center space-x-3 mb-6">
-                        <h3 class="text-3xl font-bold text-white">
-                            {footerData.company.name}
-                        </h3>
+                        <div class="flex items-center space-x-3">
+                            <img
+                                src="/favicon.svg"
+                                alt="Nexode Logo"
+                                class="w-7 h-7"
+                            />
+                            <h1 class="text-3xl text-white">
+                                <span class="font-bold"
+                                    >{footerData.company.name}</span
+                                >
+                                Soluciones
+                            </h1>
+                        </div>
                     </div>
                     <p class="text-white/80 mb-6 max-w-md leading-relaxed">
                         {footerData.company.description}
